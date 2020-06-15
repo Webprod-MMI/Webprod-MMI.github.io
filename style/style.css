@@ -1,0 +1,360 @@
+body{
+    margin: 0; /*éviter un espacement entre le bord de l'écran et le contenue de la page*/
+    min-height: 100vh;
+}
+
+/*header commun*/
+
+header{
+    
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    background-color: rgb(34, 34, 34) ;
+}
+
+.menu{  /*nettoyer et remplacer le style par defaut des lien*/
+    text-decoration: none;
+    color: #eff3f3;
+    margin-right:30px;
+    margin-left:30px;
+    
+
+}
+
+
+
+.communaute{
+    margin-right: 50px;
+}
+
+.espacement{
+    margin-left: auto;
+}
+
+.logo{
+    margin:10px;
+    
+}
+
+header>h1{
+    color: white;
+    margin-left: 50px;
+}
+
+/*footer*/
+
+footer{
+    
+    display:flex ;
+    align-items: center;
+    background-color: rgb(34, 34, 34) ;
+    padding: 15px;
+}
+
+footer>a{  /*nettoyer et remplacer le style par defaut des lien*/
+    text-decoration: none;
+    color: #eff3f3;
+    display: flex;
+    
+
+}
+
+footer>div>a{
+    
+    background: rgb(34, 34, 34);
+    text-decoration: none;
+    color: #eff3f3;
+    margin: 20px;
+    padding: 3px;
+    
+    
+
+}
+
+.mention_et_contact{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/*presentation*/
+
+.presentation{
+    background-color: #eff3f3;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.presentation>h2{
+    margin: 0;
+    color: rgb(34, 34, 34);
+    margin-bottom: 15px;
+}
+
+.contenu_présentation{
+    display:flex;
+    align-items: center;
+    text-align: start;
+    color:rgb(34, 34, 34)
+}
+
+.contenu_présentation>p{
+    margin-right:10px ;
+    margin-left: 100px;
+    font-size: 12.5pt;
+}
+
+.contenu_présentation>video{
+    margin-right:30px ;
+    
+}
+
+.notre_équipe{
+    margin-top: 50px;
+}
+
+.notre_équipe>a{
+    
+    background: rgb(34, 34, 34);
+    text-decoration: none;
+    color: #eff3f3;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+
+}
+
+/*parties services*/
+
+.services{
+    background-color: rgb(180, 171, 160);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+.services>h2{
+    margin: 0;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    margin-bottom: 30px;
+    color: #eff3f3;
+}
+
+.présentation_des_services{
+    display: flex;
+    justify-content: center;
+}
+
+.type_serv{
+    text-align:center;
+    margin-right: 10px;
+    border: solid rgb(34, 34, 34) 2px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.type_serv>img{
+    background-color:#eff3f3;
+    margin: 0;
+    border-top-right-radius: 20px;
+    
+    
+}
+
+.type_serv>h3{
+    background-color: rgb(34, 34, 34);
+    margin:0;
+    color:#eff3f3;
+    border-bottom-left-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.contact{
+    background-color: #eff3f3;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.contacter{
+    
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.contact>h2{
+    margin: 0;
+    margin-bottom: 20px;
+    
+}
+
+.contact>p{
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 12.5pt;
+    margin-bottom: 30px;
+
+}
+
+.contacter>a{
+    margin: 0;
+    
+    background: rgb(34, 34, 34);
+    text-decoration: none;
+    color: #eff3f3;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    
+
+}
+
+.reseaux_sociaux>a{
+    margin:2px;
+}
+
+/* fin de la page accueil*/
+
+/*page contacter*/
+
+.contacter_principale{
+    background-color:#eff3f3;
+    min-height: 90vh;
+    
+
+}
+
+.formulaire_de_contact{
+    background-color:rgb(180, 171, 160);
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 25%;
+    color: #eff3f3;
+    font-weight: bold;
+    padding: 30px;
+    border-left: #eff3f3 solid 2px;
+    
+}
+
+.formulaire_de_contact>input{
+background-color:rgb(180, 171, 160) ;
+ border:none;
+ margin: 5px;
+ border-bottom: #eff3f3 solid 1px;
+ color:#eff3f3;
+ font-weight: bold;
+ text-align: right;
+ padding: 5px;
+}
+
+textarea{
+    margin-top: 10px;
+
+}
+
+select{
+    border:none;
+    color: #eff3f3;
+    background-color: rgb(180, 171, 160);
+    font-weight: bold;
+    border-bottom: #eff3f3 solid 1px;
+}
+
+/*fin de la page contact*/ 
+
+/* début page equipe */ 
+
+.equipe{
+    min-height: 100vh;
+}
+
+.introduction_de_equipe{  /*introduction*/
+    padding: 10px;
+}
+
+.contact_equipe{
+    margin-left: auto;
+    text-align: center;
+}
+
+.information_equipe{
+    margin-left: 20px;
+}
+
+.membre{
+    display:flex;
+    padding: 10px;
+        
+    
+}
+
+.membre>img{
+    border-radius: 100px;
+}
+
+/*alternance des couleurs*/
+
+.membre_impair{
+    background-color:rgb(180, 171, 160) ;
+    color: #eff3f3;
+}
+
+.membre_pair{
+    background-color: #eff3f3 ;
+    color:rgb(180, 171, 160);
+}
+
+/*fin de la page équipe*/
+
+/* page realisation */
+
+.explication_realisation{
+    padding: 10px;
+}
+
+.presentationDeRealisation{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.presentationDeRealisation>h3{
+    margin-left:300px;
+}
+.impair{
+    background-color:rgb(180, 171, 160) ;
+    color: #eff3f3;
+}
+
+.pair{
+    background-color: #eff3f3 ;
+    color:rgb(180, 171, 160);
+}
+
+/* page Mention Légale */
+
+.Mention_legale{
+    background-color: #eff3f3 ;
+    color:  rgb(34, 34, 34);
+    padding: 20px;
+    min-height: 90vh;
+
+}
+
+.Mention_legale>h2{
+    margin: 0;
+}
+
+
+
+
+
+
