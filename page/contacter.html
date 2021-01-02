@@ -4,39 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/small.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/style.css" media="screen and (min-width : 1200px)">
+    
     <link rel="icon" type="image/svg" href="../img/logo_Webprod2.svg" />
 </head>
-<body>
+<body  onscroll="RetourBouton();">
+    <div class="Retour"><a href="#header"><img src="../img/chevron-up.svg" width="50px"></a></div>
+
+    <div class="MenuDeroulant">
+
+        <img src="../img/x.svg" width="70px" alt="logo" class="boutonFermetureMenu" onclick="MenuSmall()">
+        <ul>
+            <li><a href="realisation.html" class=" espacement"><h2>Réalisation</h2></a></li>
+            <li> <a href="equipe.html" class=""><h2>Notre Equipe</h2></a></li>
+            <li><a href="contacter.html" class=""><h2>Contacter nous</h2></a></li>
+            
+        </ul>
+    </div>
+
     <header id="header">
         
-        <a href="../index.html"><img src="../img/logo_Webprod2.svg" width="70px" alt="logo" class="logo"></a> <!--l'icone permet sur tt les pages de revenir à la premiere-->
-        <a href="../index.html" class="menu"><h1> Webprod</h1></a>
-        <a href="realisation.html" class="menu espacement"><h2>Realisation</h2></a> 
-        <a href="equipe.html" class="menu"><h2>Notre Equipe</h2></a>
-        <a href="contacter.html" class="menu"><h2>Contacter nous</h2></a>
+        <a href="../index.html"><img src="../img/logo_Webprod2.svg" width="70px" alt="logo" class="logo"></a> <!--menu-->
+        <a href="../index.html" class="menu"><h2> Webprod</h2></a>
+        
+        <a href="realisation.html" class="menu espacement MenuHeader"><h2>Réalisation</h2></a>
+        <a href="equipe.html" class="menu MenuHeader"><h2>Notre Equipe</h2></a>
+        <a href="#services" class="menu MenuHeader"><h2>Nos services</h2></a>
+        <a href="contacter.html" class="menu MenuHeader"><h2>Contacter nous</h2></a>
+        <img src="../img/grid.svg" width="70px" alt="logo" style="margin-right:10px" class="boutonOuvrirMenu" onclick="MenuSmall()">
         
     </header>
 
     <div class="contacter_principale"> <!--class pour def couleur du fond-->
         
         <form class="formulaire_de_contact"> <!-- formulaire visant à ensuite stocker dans une base de données les demandes afin de ne pas surcharger une boîte mail-->
-            Votre Nom* :
+         
+            
+            <label for="nom" >Votre Nom* :</label>
             <input type="text" name="nom"><br>
-            Votre Prénom* :
+            <label for="prénom" >Votre prénom* :</label>
             <input type="text" name="prénom"><br>
-            Votre adresse électronique* : 
-            <input type="text" name="prénom"><br>
-            Votre demande * :
-            <select>
+            <label for="mail">Votre mail* : </label>
+            <input type="text" name="mail"><br>
+            <label for="type">Votre demande* : </label>
+            <select name="type">
                 
                 <option name="Commande">Commande</option>
                 <option name="Candidature">Candidature</option>
                 <option name="Question">Question</option>
             </select><br>
-            <textarea rows="8" cols="100"></textarea><br>
+            <textarea rows="5%" cols="80%"></textarea><br>
             <input type="submit" name="ok" class="envoyer" >
-            
+        
         </form>
     </div>
 
@@ -49,6 +70,24 @@
             <a href="contacter.html">contact</a>
         </div>
     </footer>
+
+    <script>
+        function RetourBouton(){
+            
+            //document.querySelector('.Retour').style.transform="translate(0px,0px)";
+
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.querySelector('.Retour').style.transform="translate(0px,0px)";
+            } else {
+                document.querySelector('.Retour').style.transform="translate(300px,0px)";
+            }
+        }
+
+        function MenuSmall(){
+            document.querySelector('.MenuDeroulant').classList.toggle('AfficherMenuDeroulant');
+        }
+    </script>
     
 </body>
 </html>

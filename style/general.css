@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0; /*éviter un espacement entre le bord de l'écran et le contenue de la page*/
+    min-height: 100vh;   
+}
+
+/*header commun*/
+
+header{   
+    display:flex ;
+    align-items: center;
+    background-color: rgb(34, 34, 34) ;
+}
+
+.menu:hover{
+    background-color:white;
+    color:black;
+}
+
+.menu{  /*nettoyer et remplacer le style par defaut des lien*/
+    text-decoration: none;
+    color: #eff3f3;
+    
+    transition-duration:0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.MenuHeader{
+    display:none;
+}
+
+
+.communaute{
+    margin-right: 50px;
+}
+
+.espacement{
+    margin-left: auto;
+}
+
+.logo{
+    margin:10px; 
+}
+
+
+/*retour*/
+.Retour{
+    z-index: 1000;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    background-color: rgb(194, 109, 39);
+    border-radius:100%;
+    transform:translate(300px,0px);
+    border:solid rgb(161, 91, 33) 4px;
+    transition-duration:0.75s;
+}
+
+
+
+
+/*footer*/
+
+footer{
+    
+    display:flex ;
+    align-items: center;
+    background-color: rgb(34, 34, 34) ;
+    padding: 15px;
+}
+
+footer>a{  /*nettoyer et remplacer le style par defaut des lien*/
+    text-decoration: none;
+    color: #eff3f3;
+    display: flex;
+}
+
+footer>div>a{
+    background: rgb(34, 34, 34);
+    text-decoration: none;
+    color: #eff3f3;
+    padding: 3px;
+}
+
+.mention_et_contact{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+div h2{
+    padding-top:50px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+p{
+    font-size: 1.1em;
+}

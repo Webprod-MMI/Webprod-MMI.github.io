@@ -1,0 +1,349 @@
+/* menu déroulant style*/
+
+
+.MenuDeroulant{
+    z-index:99;
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    background-color: rgb(34, 34, 34);
+    transition-duration:1s;
+    transform: translateX(-100%);
+}
+
+.MenuDeroulant>ul{
+    margin-top:100px;
+    list-style: none;
+    padding: 0px;
+}
+
+.MenuDeroulant>ul>li{
+    text-align:center;
+    transition-duration: 0.5s;
+   
+    
+    
+    transition-duration:0.5s;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.MenuDeroulant>ul>li>a{
+    text-decoration: none;
+    color: #eff3f3;
+}
+
+.MenuDeroulant li:hover{
+    z-index: 100;
+    background-color: white;
+}
+
+.MenuDeroulant li:hover>a{
+    color:black;
+}
+
+.AfficherMenuDeroulant{
+    transform: translateX(0px);
+}
+
+.boutonFermetureMenu{
+    position:fixed;
+    top:20px;
+    right:25px;
+}
+
+.boutonOuvrirMenu{
+    margin-left:auto;
+}
+
+/*page acceuil*/
+
+/*partie présentation*/
+
+.presentation{
+    min-height: 100vh;
+    
+}
+
+.presentation>h2{
+    padding-top:50px;
+    font-size: 1.8em;
+    text-align: center;
+    
+    margin: 0;
+    color: rgb(34, 34, 34);
+    margin-bottom: 15px;
+}
+
+.contenu_présentation{
+    display:grid;
+    color:rgb(34, 34, 34);
+}
+
+.contenu_présentation>p{
+    text-align:center;
+    font-size: 1.1em;
+}
+
+.contenu_présentation>video{
+    width: 90%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.notre_équipe{
+    margin-top:50px;
+    padding-bottom: 50px;
+    text-align: center;
+    
+}
+
+.notre_équipe>a{
+    
+    background: rgb(34, 34, 34);
+    text-decoration: none;
+    color: #eff3f3;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+}
+
+/*fin de la partie présentation*/
+
+/*début de la partie services*/
+
+.services{
+    background-color: rgb(206, 203, 200);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.services>h2{
+    margin: 0;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    margin-bottom: 30px;
+    color: #eff3f3;
+}
+
+.type_serv{
+
+    /*stuyle spe pour small*/
+    width: 90%;
+    margin-left:5%;
+
+    /*fin du style spécifique pour small*/
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+    margin-right: 10px;
+    border: solid rgb(34, 34, 34) 2px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.type_serv>img{
+    background-color:#eff3f3;
+    margin: 0;
+    border-top-right-radius: 20px;
+}
+
+.type_serv>h3{
+    background-color: rgb(34, 34, 34);
+    margin:0;
+    color:#eff3f3;
+    border-bottom-left-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/*fin partie service*/
+
+/*debut partie contact*/
+
+.contact{
+    background-color: #eff3f3;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.contacter{   
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contact>h2{
+    font-size:1.8em;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+
+.contact img{
+    width: 50px;
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+.contact>p{
+    text-align:center;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.contacter>a{
+    margin: 0;
+    
+    background: rgb(34, 34, 34);
+    text-decoration: none;
+    color: #eff3f3;
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+}
+
+.reseaux_sociaux>a{
+    margin:2px;
+}
+
+/*fin de la partie contacter*/
+
+/*fin de la page acceuil*/
+
+/*debut page équipe*/
+
+.equipe{
+    min-height: 100%;
+}
+
+.introduction_de_equipe{
+    padding-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.introduction_de_equipe>h2{
+   padding-top:50px;
+   padding-bottom: 50px;
+    font-size:1.8em;
+}
+
+.introduction_de_equipe>p{
+    font-size:1.1em;
+}
+
+.contact_equipe{
+    margin-left: auto;
+    text-align: center;
+}
+
+.information_equipe{
+    margin-left: 20px;
+}
+
+.membre{
+    padding: 10px;
+    text-align: center;
+}
+.membre>p{
+    margin:0px;
+}
+
+.membre>img{
+    border-radius: 100px;
+}
+
+/*alternance des couleurs*/
+
+.membre_impair{
+    background-color:rgb(180, 171, 160) ;
+    color: #eff3f3;
+}
+
+.membre_pair{
+    background-color: #eff3f3 ;
+    color:rgb(180, 171, 160);
+}
+
+/*fin de la page équipe*/
+
+/*page de réalisation*/
+
+.realisation{
+    text-align: center;
+    min-height: 90vh;
+}
+
+.realisation img{
+    width: 90%;
+}
+
+/*fin de la page réalisation*/
+
+/*debut page contacter*/
+
+/*page contacter*/
+
+.contacter_principale{
+    background-color:#eff3f3;
+    min-height: 90vh;
+}
+
+.formulaire_de_contact{
+    background-color:rgb(180, 171, 160);
+    display: inline-block;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #eff3f3;
+    font-weight: bold;
+    padding: 20px;
+    border-left: #eff3f3 solid 2px;  
+}
+
+fieldset{
+    padding:0px;
+}
+
+.formulaire_de_contact input{
+ background-color:rgb(180, 171, 160) ;
+ border:none;
+ margin: 5px;
+ border-bottom: #eff3f3 solid 1px;
+ color:#eff3f3;
+ 
+
+ 
+ padding: 5px;
+ 
+}
+
+textarea{
+    margin-top: 10px;
+    max-width: 60%;
+}
+
+select{
+    border:none;
+    color: #eff3f3;
+    background-color: rgb(180, 171, 160);
+    font-weight: bold;
+    border-bottom: #eff3f3 solid 1px;
+}
+
+
+
+label{
+    width: 150px;
+    display:inline-block;
+}
+
+/*fin de la page contact*/ 
+

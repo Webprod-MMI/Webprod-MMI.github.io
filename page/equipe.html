@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre équipe</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/small.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/style.css" media="screen and (min-width : 1200px)">
+    
+    
     <link rel="icon" type="image/svg" href="../img/logo_Webprod2.svg" />
 </head>
-<body>
-    
-    <header id="header"> 
+<body onscroll="RetourBouton();">
+    <div class="Retour"><a href="#header"><img src="../img/chevron-up.svg" width="50px"></a></div>
+    <div class="MenuDeroulant">
+
+        <img src="../img/x.svg" width="70px" alt="logo" class="boutonFermetureMenu" onclick="MenuSmall()">
+        <ul>
+            <li><a href="realisation.html" class="espacement"><h2>Réalisation</h2></a></li>
+            <li><a href="equipe.html" class=""><h2>Notre Equipe</h2></a></li>
+            <li><a href="contacter.html" class=""><h2>Contacter nous</h2></a></li>
+            
+        </ul>
+    </div>
+
+    <header id="header">
         
-        <a href="../index.html"><img src="../img/logo_Webprod2.svg" width="70px" alt="logo" class="logo"></a> <!--l'icone permet sur tt les pages de revenir à la premiere-->
-        <a href="../index.html" class="menu"><h1> Webprod</h1></a>
-        <a href="realisation.html" class="menu espacement"><h2>Realisation</h2></a> 
-        <a href="equipe.html" class="menu"><h2>Notre Equipe</h2></a>
-        <a href="contacter.html" class="menu"><h2>Contacter nous</h2></a>
+        <a href="../index.html"><img src="../img/logo_Webprod2.svg" width="70px" alt="logo" class="logo"></a> <!--menu-->
+        <a href="../index.html" class="menu"><h2> Webprod</h2></a>
+        
+        <a href="realisation.html" class="menu espacement MenuHeader"><h2>Réalisation</h2></a>
+        <a href="equipe.html" class="menu MenuHeader"><h2>Notre Equipe</h2></a>
+        <a href="#services" class="menu MenuHeader"><h2>Nos services</h2></a>
+        <a href="contacter.html" class="menu MenuHeader"><h2>Contacter nous</h2></a>
+        <img src="../img/grid.svg" width="70px" alt="logo" style="margin-right:10px" class="boutonOuvrirMenu" onclick="MenuSmall()">
         
     </header>
-
     <div class="introduction_de_equipe"> <!--premiere zone-->
         <h2>Notre Equipe</h2>
-        <p>Voici notre équipe. Malgré notre nombre restreint, nous sommes déterminés à vous offrir la qualité de prestations correspondant à vos attentes.
+        <p>Voici notre équipe. Malgré notre nombre restreint, nous sommes déterminé à vous offrir la qualité de prestations correspondant à vos attentes.
             Chacun de nos membres est spécialisé dans un domaine. 
             Ainsi nous travaillons main dans la main pour assurer un service de qualité.
             
@@ -32,14 +49,13 @@
         <img src="../img/82802047_489356251977386_4190448575362105344_o.jpg" width="175">
         <div class="information_equipe">
             <h3>DUPONT Valentin</h3>
-            <p>Bonjour, je suis Valentin. Je pratique le dévellopement web. Je pratique aussi à moindre mesure l'infographie.</p>
+            <p>Bonjour, je suis Valentin. Je pratique le dévellopement web. Je pratique aussi à moindre mesures l'infographie</p>
         </div>
         <div class="contact_equipe">
             <h3>Contact</h3>
             
-                <p>06 68 00 49 58<br>
-                    valentin.dupont@uha.fr<br>
-                    facebook : valentin.dupont.92167<br></p>
+                <p>valentin.dupont@uha.fr</p>
+                <p>Resaux social préféré : Discord</p>
             
         </div>
     </div>
@@ -52,23 +68,33 @@
         </div>
         <div class="contact_equipe">
             <h3>Contact</h3>
-            <p>07 82 99 89 13<br> 
-                dziedzicelodiepro@gmail.com<br>
-                Instagram : @off_elodie</p>
+            <p>dziedzicelodiepro@gmail.com</p>
+            <p>Resaux social préféré : Tiktok</p>
         </div>
     </div>
     <div class="membre membre_impair">
-        <img src="../img/103549903_539671876708747_709265033619627567_n.jpg" width="175">
+        <img src="../img/Paul.jpg" width="175">
         <div class="information_equipe">
-            <h3>INNOCENTI Quentin</h3>
-            <p>Salut, je m'appelle Quentin ! Je suis rédacteur web, je suis très actif sur les réseaux sociaux, alors n'hésiter pas à me contacter.</p>
+            <h3>REBRASSIER Paul</h3>
+            <p>Salut, je m'appelle Paul! Je suis dévellopeur web, je suis très actif sur les réseaux sociaux, alors n'hésiter pas à me contacter</p>
         </div>
         <div class="contact_equipe">
             <h3>Contact</h3>
-            <p>06 52 26 21 53<br>
-                quentin.innocenti@uha.fr<br>
-            </p>
+            <p>paul.rebrassier@uha.fr</p>
+            <p>Resaux social préféré : Discord</p>
             
+        </div>
+    </div>
+    <div class="membre membre_pair">
+        <img src="../img/Katel.jpg" width="175">
+        <div class="information_equipe">
+            <h3>GOSSEMENT Katel</h3>
+            <p>Salut, moi c'est Katel ! Je suis redactrice web..</p>
+        </div>
+        <div class="contact_equipe">
+            <h3>Contact</h3>
+                <p>ktl.gossement@hotmail.fr</p>
+                <p>Resaux social préféré : Pinterest</p>
         </div>
     </div>
      <!-- fin de la présentation de l'équipe-->
@@ -84,7 +110,23 @@
     </footer>
 
 
-    
+    <script>
+        function MenuSmall(){
+            document.querySelector('.MenuDeroulant').classList.toggle('AfficherMenuDeroulant');
+        }
+
+        function RetourBouton(){
+            
+            //document.querySelector('.Retour').style.transform="translate(0px,0px)";
+
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.querySelector('.Retour').style.transform="translate(0px,0px)";
+            } else {
+                document.querySelector('.Retour').style.transform="translate(300px,0px)";
+            }
+        }
+    </script>
     
 </body>
 </html>
