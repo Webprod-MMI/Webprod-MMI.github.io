@@ -282,6 +282,9 @@
 
 .realisation img{
     width: 90%;
+    padding: 10px;
+    background-color:rgb(34,34,34);
+    border-radius: 10px;
 }
 
 /*fin de la page réalisation*/
